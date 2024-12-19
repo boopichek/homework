@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма заказа в ресторане</title>
+</head>
+<body>
+
+<h1>Заказ в ресторане</h1>
+<form action="#">
+    <label for="name">Имя:</label>
+    <input type="text" id="name">
+
+    <label for="email">Электронная почта:</label>
+    <input type="email" id="email">
+
+    <label for="phone">Телефон:</label>
+    <input type="tel" id="phone">
+
+    <label for="date">Дата:</label>
+    <input type="date" id="date">
+
+    <label for="time">Время:</label>
+    <input type="time" id="time">
+
+    <label for="guests">Гости:</label>
+    <input type="number" id="guests" min="1" max="20">
+
+    <label for="menu">Блюдо:</label>
+    <select id="menu">
+        <option value="паста">Паста</option>
+        <option value="пицца">Пицца</option>
+        <option value="салат">Салат</option>
+        <option value="десерт">Десерт</option>
+    </select>
+
+    <label for="drink">Напиток:</label>
+    <select id="drink">
+        <option value="вода">Вода</option>
+        <option value="сок">Сок</option>
+        <option value="вино">Вино</option>
+    </select>
+
+    <label for="dessert">Десерт:</label>
+    <select id="dessert">
+        <option value="торт">Торт</option>
+        <option value="мороженое">Мороженое</option>
+    </select>
+
+    <label for="special_requests">Запросы:</label>
+    <textarea id="special_requests" rows="4" placeholder="Ваши пожелания..."></textarea>
+
+    <label for="allergies">Аллергии:</label>
+    <textarea id="allergies" rows="2" placeholder="Аллергии..."></textarea>
+
+    <label for="newsletter">
+        <input type="checkbox" id="newsletter">
+        Подписаться на новости
+    </label>
+
+    <button type="submit">Отправить</button>
+</form>
+
+</body>
+</html>
